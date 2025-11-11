@@ -1,0 +1,68 @@
+{
+  "name": "Çeşme Hotels Import",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "readRows",
+        "sheetId": "YOUR_GOOGLE_SHEET_ID",
+        "range": "Sheet1!A1:K100"
+      },
+      "id": "1",
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 2,
+      "position": [300, 200],
+      "credentials": {
+        "googleApi": "Google Account"
+      }
+    },
+    {
+      "parameters": {
+        "options": {
+          "includeHeaders": true
+        }
+      },
+      "id": "2",
+      "name": "Convert to CSV",
+      "type": "n8n-nodes-base.csv",
+      "typeVersion": 1,
+      "position": [600, 200]
+    },
+    {
+      "parameters": {
+        "mode": "append",
+        "fileName": "cesme_hotels_output.csv",
+        "dataPropertyName": "data"
+      },
+      "id": "3",
+      "name": "Write File",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 1,
+      "position": [900, 200]
+    }
+  ],
+  "connections": {
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Convert to CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to CSV": {
+      "main": [
+        [
+          {
+            "node": "Write File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
