@@ -1,5 +1,6 @@
-id,name,category,district,phone,website,lat,lng,stars,is_member,updated_at
-1,"Reges A Luxury Collection Resort & Spa","hotel","Boyalık","+90 232 723 03 03","https://regescesme.com",38.3335,26.3221,5,true,2025-11-11
-2,"Altın Yunus Resort & Thermal Hotel","hotel","Boyalık","+90 232 723 12 00","https://altinyunus.com.tr",38.3330,26.3240,5,true,2025-11-11
-3,"Beyevi Alaçatı","boutique","Alaçatı","+90 232 716 80 08","https://beyevi.com.tr",38.2842,26.3763,4,true,2025-11-11
-4,"Cumbalı Konak","boutique","Alaçatı","+90 232 716 86 61","https://cumbalikonak.com",38.2861,26.3759,4,true,2025-11-11
+id,name,category,district,phone,website,lat,lng,stars,is_member,updated_at,amenities,services,price_range,accessibility,pet_friendly,family_friendly,parking_type,beach_access,distance_to_sea_m,checkin_from,checkout_until,languages,payment_methods,tags
+1,"Reges A Luxury Collection Resort & Spa","hotel","Boyalık","+90 232 723 03 03","https://regescesme.com",38.3335,26.3220,5,true,2025-11-11,wifi|spa|pool,transfer|concierge|room_service,lux,step_free|accessible_room,true,true,private,private,100,14:00,12:00,tr|en|de,visa|mc|cash,luxury|seaside
+2,"Altın Yunus Resort & Thermal Hotel","hotel","Boyalık","+90 232 723 12 00","https://altinyunus.com.tr",38.3330,26.3240,5,true,2025-11-11,wifi|spa|thermal_pool,concierge|parking|transfer,lux,step_free,true,true,private,private,120,14:00,12:00,tr|en|ru,visa|mc|amex,resort|thermal
+3,"Beyevi Alaçatı","boutique","Alaçatı","+90 232 716 80 08","https://beyevi.com.tr",38.2842,26.3763,4,true,2025-11-11,wifi|garden,concierge|room_service,mid,step_free,false,true,street,none,250,15:00,12:00,tr|en,cash|visa,boutique|romantic
+4,"Cumbalı Konak","boutique","Alaçatı","+90 232 716 86 61","https://cumbalikonak.com",38.2861,26.3759,4,true,2025-11-11,wifi|garden,room_service|breakfast,mid,none,false,true,street,none,300,14:00,12:00,tr|en,visa|mc,boutique|family
+5,"Boyalık Hotel","hotel","Boyalık","+90 232 700 00 00","https://example-seaside.com",38.3339,26.3230,5,true,2025-11-11,wifi|spa|pool,transfer|room_service,lux,step_free|accessible_room,true,true,private,private,120,14:00,12:00,tr|en,visa|mc|cash,spa|romantic
