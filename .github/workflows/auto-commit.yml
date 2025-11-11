@@ -1,0 +1,27 @@
+name: Auto Commit Updates
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 6 * * *' # Her sabah 09:00 (UTC+3)
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit timestamp
+        run: |
+          echo "Last update: $(date)" > last_update.txt
+          git add last_update.txt
+          git commit -m "Auto update timestamp" || echo "No changes"
+          git push
