@@ -1,1 +1,5 @@
-
+id,name,category,district,phone,website,lat,lng,stars,is_member,updated_at
+1,"Reges A Luxury Collection Resort & Spa","hotel","Boyalık","+90 232 723 03 03","https://regescesme.com",38.3335,26.3221,5,true,2025-11-11
+2,"Altın Yunus Resort & Thermal Hotel","hotel","Boyalık","+90 232 723 12 00","https://altinyunus.com.tr",38.3330,26.3240,5,true,2025-11-11
+3,"Beyevi Alaçatı","boutique","Alaçatı","+90 232 716 80 08","https://beyevi.com.tr",38.2842,26.3763,4,true,2025-11-11
+4,"Cumbalı Konak","boutique","Alaçatı","+90 232 716 86 61","https://cumbalikonak.com",38.2861,26.3759,4,true,2025-11-11
