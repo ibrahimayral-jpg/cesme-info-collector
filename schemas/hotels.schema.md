@@ -17,6 +17,24 @@ Bu sayede n8n veya Google Sheets akışında doğru alan eşleştirmesi yapılab
 | `is_member` | boolean | Dernek/organizasyon üyesi mi | true |
 | `updated_at` | date | Son güncelleme tarihi | 2025-11-11 |
 
+## Özellik Sütunları
+
+| Alan | Tür | Açıklama | Örnek |
+|-----|-----|----------|-------|
+| amenities | list(string) | Tesis özellikleri, `|` ile ayrılır | wifi|spa|pool |
+| services | list(string) | Hizmetler | transfer|concierge |
+| price_range | enum | budget\|mid\|premium\|lux | premium |
+| accessibility | list(string) | Erişilebilirlik | step_free|accessible_room |
+| pet_friendly | boolean | Evcil hayvan kabul | true |
+| family_friendly | boolean | Aile uygunluğu | true |
+| parking_type | enum | none\|street\|private\|valet | private |
+| beach_access | enum | none\|public\|private | private |
+| distance_to_sea_m | integer | Denize mesafe (metre) | 120 |
+| checkin_from | time(HH:MM) | Giriş saati | 14:00 |
+| checkout_until | time(HH:MM) | Çıkış saati | 12:00 |
+| languages | list(string) | Konuşulan diller | tr|en|de |
+| payment_methods | list(string) | Ödeme yöntemleri | cash|visa|mc |
+| tags | list(string) | Sınıflandırma etiketleri | boutique|spa |
 ---
 
 **Not:**  
